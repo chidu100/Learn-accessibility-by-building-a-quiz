@@ -24,9 +24,26 @@ body {
     font-size: min(5vw, 1.2em);
   }
 
+  nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+  }
+
   nav > ul {
     display: flex;
     justify-content: space-evenly;
+ }
+
+ nav > ul > li{
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+ }
+
+ li > a {
+  color: #dfdfe2; 
  }
 
  h1,
@@ -36,6 +53,10 @@ h2 {
 
 h2 {
   border-bottom: 4px solid #dfdfe2;
+}
+
+p::before{
+   content: "Question #";
 }
 
 .sr-only{
